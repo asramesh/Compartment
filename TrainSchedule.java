@@ -77,7 +77,8 @@ public class TrainSchedule{
 			mumbaiExpress.addCompartment(compartmentList);
 			System.out.println("This Train Has an Engine");
 			compartmentList.clear();
-			
+			//Note: addCompartment(compartmentList) should be done only once for a train after adding all compartment.. 
+		 //you have done it for every compartment which is wrong. The same is the case for clear(). just do once per train. see how we did stations and model like that.
 			
 			FirstAC comp1 = new FirstAC();
 			comp1.capacity = 30;
